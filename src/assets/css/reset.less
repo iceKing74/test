@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  flex: none;
+}
+
+a { 
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+input, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+html {
+  background-color: rgba(135, 206, 235, 0.1);
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #301333
+}
+
+#nprogress {
+  .bar{
+    background-color: #FFC0CB !important;
+  }
+  .peg{
+    box-shadow:  0 0 10px #FFC0CB, 0 0 5px #FFC0CB;
+  }
+}
+
+// 调用混合，类似于函数
+.between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// 面板样式
+.xx-panel {
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .11);
+  .heading {
+    .between-center();
+    h1{
+      font-size: 20px;
+    }
+    .is-link {
+      font-weight: normal;
+    }
+  }
+  
+  .search {
+    .between-center();
+    height: 63px;
+    .el-form-item {
+      margin-bottom: 0px;
+    }
+  }
+
+  .xx-pagination {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+  }
+}
